@@ -36,11 +36,13 @@ Create a virtual environment (optional but recommended) and install the required
 
 bash
 pip install -r requirements.txt
+
+
 ### 3. Configure API Keys
 Create a .env file in the root of the project directory and add the following:
-plaintext
-SERPAPI_KEY=your_serpapi_key
-OPENAI_API_KEY=your_openai_api_key
+ -plaintext
+ -SERPAPI_KEY=your_serpapi_key
+ -OPENAI_API_KEY=your_openai_api_key
 For Google Sheets integration, ensure you have the Google Service Account JSON file. Update the script with the path to this file.
 ### 4. Run the app
 After installing the dependencies and setting up the keys, you can run the Streamlit app:
