@@ -33,7 +33,7 @@ cd AI_Data_Retrieval`
 
 ### Step 2: Install dependencies
 
-##Create a virtual environment (optional but recommended) and install the required packages.
+Create a virtual environment (optional but recommended) and install the required packages.
 
 `pip install -r requirements.txt`
 
@@ -42,6 +42,17 @@ cd AI_Data_Retrieval`
 ##Create a .env file in the root of the project directory and add the following:
    - `SERPAPI_KEY=your_serpapi_key`
    - `OPENAI_API_KEY=your_openai_api_key`
-For Google Sheets integration, ensure you have the Google Service Account JSON file. Update the script with the path to this file.
+
+
+###For Google Sheets integration, ensure you have the Google Service Account JSON file. Update the script with the path to this file.
+
+
+### Step 4: Run the app
+
+After installing the dependencies and setting up the keys, you can run the Streamlit app:
+
+`streamlit run app.py`
+
+
 
 
