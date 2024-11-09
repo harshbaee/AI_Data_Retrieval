@@ -27,27 +27,24 @@ Before running the app, you need to install the necessary dependencies and confi
 
 ### 1. Clone the repository
 
-```bash
+`bash
 git clone https://github.com/your-username/AI_Data_Retrieval.git
-cd AI_Data_Retrieval
+cd AI_Data_Retrieval`
+
 ### 2.Install dependencies
 Create a virtual environment (optional but recommended) and install the required packages.
 
 bash
-Copy code
 pip install -r requirements.txt
 ### 3. Configure API Keys
 Create a .env file in the root of the project directory and add the following:
 plaintext
-Copy code
 SERPAPI_KEY=your_serpapi_key
 OPENAI_API_KEY=your_openai_api_key
 For Google Sheets integration, ensure you have the Google Service Account JSON file. Update the script with the path to this file.
 ### 4. Run the app
 After installing the dependencies and setting up the keys, you can run the Streamlit app:
-
 bash
-Copy code
 streamlit run app.py
 Usage
 Upload a CSV File or Provide Google Sheet URL:
@@ -64,12 +61,4 @@ Click the "Run Web Search" button to perform web searches for each entity in the
 Extract Information:
 
 Use OpenAI’s API to extract relevant information from the search results.
-Download the Extracted Data:
-
-After extraction, you can download the processed data in CSV format.
-Example
-Suppose you have a CSV file with a column of S&P 500 sectors. You can use this app to perform searches like:
-
-"List companies in the {sector} sector with the highest P/E ratio."
-The app will search for each sector and display the relevant links and extracted information.
 
